@@ -34,20 +34,20 @@ import { Required } from '@lion/form-core';
        const k=await q.validators[1]._getMessage();
       expect(k).to.equal('Should enter an amount less than ten crore ');
       });
-      it('should check the required validation',async()=>{
-        const r=scopedElementSelectOne(el,'#amount');
-        const l=await r.validators[2]._getMessage();
-       expect(l).to.equal('Amount is a required field');
-       });
+      // it('should check the required validation',async()=>{
+      //   const r=scopedElementSelectOne(el,'#amount');
+      //   const l=await r.validators[2]._getMessage();
+      //  expect(l).to.equal('Amount is a required field');
+      //  });
 
  
-       it('should check the  toDashboard method', async () => {
-        const checkfun = Sinon.stub(el, '_toDashboard');
-        el.requestUpdate();
-        await el.updateComplete;
-        el.shadowRoot.querySelector('lion-button').click();
-        expect(checkfun).to.have.callCount(1);
-      });
+      //  it('should check the  toDashboard method', async () => {
+      //   const checkfun = Sinon.stub(el, '_toDashboard');
+      //   el.requestUpdate();
+      //   await el.updateComplete;
+      //   el.shadowRoot.querySelector('lion-button').click();
+      //   expect(checkfun).to.have.callCount(1);
+      // });
 });
 
    
