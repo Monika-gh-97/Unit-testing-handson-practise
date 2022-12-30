@@ -24,6 +24,7 @@ describe('loan-header', async() => {
       button[1].click();
       expect(button[1]).to.have.class('bg-btn-color');
     });
+    
     it('should check for the color change of button', async () => {
       button[0].click();
       expect(button[1]).to.have.class('btn-cursor');

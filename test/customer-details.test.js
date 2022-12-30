@@ -10,6 +10,7 @@ describe('customer details', async() => {
     const b=await a.validators[2]._getMessage();
   expect(b).to.equal('First name is a required field');
   });
+ 
   it('should check the required elements',async()=>{
     const d=scopedElementSelectOne(el,"#last_name");
     const c=await d.validators[2]._getMessage();

@@ -10,8 +10,7 @@ describe('Success screen ',async () => {
   it('should check the element is defined',async()=>{
     expect(el).to.not.be.undefined;
   });
- 
-  it('should check the heading message',async()=>{
+ it('should check the heading message',async()=>{
 const x=scopedElementSelectOne(el,'h2');
 expect(x.innerText).to.equal('!!!');
 
